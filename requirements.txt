@@ -1,5 +1,8 @@
-statsmodels==0.14.1
+numpy==1.26.4
+Cython==3.0.10
 scipy==1.13.0
+statsmodels==0.14.1 --only-binary :all:
+
 
 streamlit
 pandas
