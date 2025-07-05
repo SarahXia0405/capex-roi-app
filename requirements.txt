@@ -1,3 +1,6 @@
+statsmodels==0.14.1
+scipy==1.13.0
+
 streamlit
 pandas
 scikit-learn
