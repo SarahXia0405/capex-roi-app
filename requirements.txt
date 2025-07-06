@@ -1,7 +1,6 @@
 streamlit
 pandas
-numpy>=1.26.4
-
+numpy==1.23.5
 scikit-learn
 spacy==3.5.3
 thinc==8.1.10
@@ -10,3 +9,6 @@ pickle-mixin
 statsmodels
 matplotlib
 openpyxl
+
+# spaCy small English model
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0.tar.gz
