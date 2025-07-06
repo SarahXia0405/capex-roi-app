@@ -4,7 +4,15 @@ import spacy
 from dateutil import parser as date_parser
 
 import spacy
+import subprocess
+import importlib.util
+
+# Auto-download spaCy model if not installed
+if importlib.util.find_spec("en_core_web_sm") is None:
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+
 nlp = spacy.load("en_core_web_sm")
+
 
 
 
