@@ -1,9 +1,14 @@
 import pandas as pd
 import statsmodels.api as sm
 import joblib
+import os
 
 try:
-    model_rlm = joblib.load("robust_rlm_model.pkl")
+    # model_rlm = joblib.load("robust_rlm_model.pkl")
+    # Always use absolute path based on file location
+    MODEL_PATH = os.path.join(os.path.dirname(__file__), "robust_rlm_model.pkl")
+    model_rlm = joblib.load(MODEL_PATH)
+
 except FileNotFoundError:
     model_rlm = None
 
