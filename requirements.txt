@@ -1,15 +1,14 @@
-numpy
-Cython==3.0.10
-scipy>=1.14.1
-statsmodels==0.14.1
-spacy==3.7.4
-
-
 streamlit
 pandas
+numpy==1.23.5
 scikit-learn
+spacy==3.5.3
+thinc==8.1.10
+joblib
+pickle-mixin
+statsmodels
 matplotlib
 openpyxl
-numpy
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
-statsmodels
+
+# spaCy small English model
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0.tar.gz
